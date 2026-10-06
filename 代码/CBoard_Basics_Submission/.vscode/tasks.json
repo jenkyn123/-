@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "C Board: Configure Debug",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--preset", "Debug"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "C Board: Build Debug",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--build", "--preset", "Debug"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": "C Board: Configure Debug",
+      "dependsOrder": "sequence",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
