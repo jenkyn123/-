@@ -5,7 +5,7 @@
             "name": "Debug",
             "displayName": "STM32F407 Debug",
             "generator": "Ninja",
-            "binaryDir": "${sourceDir}/CBoard_Basics_Complete/build/Debug",
+            "binaryDir": "${sourceDir}/build/Debug",
             "toolchainFile": "${sourceDir}/CBoard_Basics_Complete/cmake/gcc-arm-none-eabi.cmake",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Debug"
@@ -15,7 +15,7 @@
             "name": "Release",
             "displayName": "STM32F407 Release",
             "generator": "Ninja",
-            "binaryDir": "${sourceDir}/CBoard_Basics_Complete/build/Release",
+            "binaryDir": "${sourceDir}/build/Release",
             "toolchainFile": "${sourceDir}/CBoard_Basics_Complete/cmake/gcc-arm-none-eabi.cmake",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release"
