@@ -1,0 +1,7 @@
+/build/
+*.elf
+*.hex
+*.bin
+*.map
+*.su
+compile_commands.json

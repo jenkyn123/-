@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cmake",
+            "label": "CMake: configure STM32F407 Debug",
+            "command": "configure",
+            "preset": "Debug",
+            "problemMatcher": []
+        },
+        {
+            "type": "cmake",
+            "label": "CMake: build STM32F407 Debug",
+            "command": "build",
+            "preset": "Debug",
+            "dependsOn": "CMake: configure STM32F407 Debug",
+            "dependsOrder": "sequence",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
